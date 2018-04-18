@@ -26,10 +26,6 @@ public class MyblogApplicationTests {
     @Test
     @Transactional
     public void myBatisConnectionTest() {
-        Integer result = userMapper.insert("winterchen", "123456", "12345678910");
-        System.out.println(result);
-        User u = userMapper.findUserByPhone("12345678910");
-        Assert.assertEquals("winterchen", u.getName());
 
     }
 

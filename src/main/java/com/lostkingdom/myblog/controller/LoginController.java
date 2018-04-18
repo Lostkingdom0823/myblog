@@ -21,7 +21,7 @@ public class LoginController {
 
 
 
-        if(loginCheck(userName,password)){
+        if(basicInfoCheck(userName,password)){
 
         }
         return null;
@@ -33,11 +33,10 @@ public class LoginController {
     private Boolean basicInfoCheck(String userName,String password){
         if(StringUtils.isNotBlank(userName)){
             if (StringUtils.isNotBlank(password)){
-                //todo
-
+                return true;
             }
         }
-        return null;
+        return false;
     }
     /**
      * check user infomation without token
